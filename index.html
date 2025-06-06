@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>#GoldieSoldMe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background-color: #111;
+      font-family: 'Inter', sans-serif;
+      color: #fff;
+      text-align: center;
+    }
+    header img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    main {
+      padding: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 2.8rem;
+      color: #f5d97c;
+      margin: 1.5rem 0 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    p.tagline {
+      font-size: 1.2rem;
+      color: #f2f2f2;
+      margin-bottom: 2rem;
+      padding: 0 1rem;
+    }
+    form {
+      width: 100%;
+      padding: 0 1rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 20px;
+      margin: 14px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      background: #fcecb6;
+      color: #000;
+    }
+    textarea::placeholder,
+    input::placeholder {
+      color: #444;
+    }
+    button {
+      background-color: #f5d97c;
+      color: black;
+      font-weight: bold;
+      border: none;
+      padding: 20px;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      margin-top: 1rem;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #ffe48c;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 0.95rem;
+      background-color: #000;
+      color: #ffe259;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="header.jpg" alt="#GoldieSoldMe Header"/>
+  </header>
+
+  <main>
+    <h1>#GOLDIESOLDME</h1>
+    <p class="tagline">Need a car? I’ve got you covered. Book a free 5-min call below.</p>
+    <form action="mailto:goldiesoldme@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <select name="time" required>
+        <option value="">Best Time to Call</option>
+        <option>9:00 AM</option>
+        <option>9:15 AM</option>
+        <option>9:30 AM</option>
+        <option>9:45 AM</option>
+        <option>10:00 AM</option>
+        <option>10:15 AM</option>
+        <option>10:30 AM</option>
+        <option>10:45 AM</option>
+        <option>11:00 AM</option>
+      </select>
+      <select name="trade">
+        <option value="">Do You Have a Trade-In?</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+      <textarea name="comments" rows="5" placeholder="Additional Comments"></textarea>
+      <button type="submit">Book Now</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Matt Goldie<br/>
+    📲 720-595-0359<br/>
+    📍 Corwin Toyota Boulder</p>
+  </footer>
+</body>
+</html>
